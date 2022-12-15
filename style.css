@@ -169,9 +169,59 @@ button {
   color: var(--clr-neutral-400);
 }
 
+.img_top {
+  width: 372px;
+  height: auto;
+  border-radius: 20px;
+  margin-left: 16px;
+}
+
+.img_left-container {
+  position: relative;
+}
+
+.img_left {
+  width: 129px;
+  height: auto;
+  border-radius: 20px;
+  margin-left: -22px;
+  filter: contrast(200%);
+  filter: saturate(8);
+}
+
+.img_left-clr {
+  margin-left: -22px;
+  border-radius: 20px;
+  position: absolute;
+
+  z-index: 2;
+  background-color: var(--clr-primary-100);
+  opacity: 50%;
+  filter: contrast(200%);
+
+  width: 129px;
+  height: 100%;
+}
+
+.img_right {
+  width: 220px;
+  height: auto;
+  border-radius: 20px;
+  margin-left: 1.5em;
+}
+
+.img_wrapper {
+  display: flex;
+  margin-top: 1.5em;
+}
+
+article.product {
+  margin-top: 4em;
+}
+
 article.hero {
   padding: 0 1em 0 1em;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
 }
 
 article .hero_footer {
