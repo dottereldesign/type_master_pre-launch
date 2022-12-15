@@ -169,11 +169,18 @@ button {
   color: var(--clr-neutral-400);
 }
 
+/* images */
 .img_top {
-  width: 372px;
+  width: calc(100% - 16px);
   height: auto;
-  border-radius: 20px;
+  border-radius: 20px 0 0 20px;
   margin-left: 16px;
+}
+
+.img_top-keyboard {
+  border-radius: 20px 0 0 20px;
+  width: 100%;
+  height: auto;
 }
 
 .img_left-container {
