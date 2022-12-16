@@ -145,7 +145,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 1em 0 1em;
-  margin: 1em 0 3em 0;
+  margin: 1em auto 3em auto;
+  max-width: 1110px;
 }
 
 button {
@@ -153,7 +154,6 @@ button {
   width: 151px;
   height: 48px;
   text-transform: uppercase;
-
   font-size: 1rem;
   font-weight: var(--fw-extra-bold);
   border-radius: 8px;
@@ -181,6 +181,25 @@ button {
   border-radius: 20px 0 0 20px;
   width: 100%;
   height: auto;
+}
+
+@media (min-width: 768px) {
+  .grid_column-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    max-width: 1110px;
+  }
+
+  .column_1-2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .column_2-3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
 }
 
 .img_left-container {
