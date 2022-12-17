@@ -104,6 +104,10 @@ select {
   font-family: var(--ff-primary-100);
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   font-size: var(--fs-900);
   color: var(--clr-neutral-100);
@@ -157,6 +161,8 @@ button {
   font-size: 1rem;
   font-weight: var(--fw-extra-bold);
   border-radius: 8px;
+  display: block;
+  text-decoration: none;
 }
 
 article.hero {
@@ -194,7 +200,7 @@ article span {
 
 /* images */
 .img_top {
-  width: calc(100% - 16px);
+  width: 100%;
   height: auto;
   border-radius: 20px 0 0 20px;
   margin-left: 16px;
@@ -206,13 +212,13 @@ article span {
   height: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .grid_column-2 {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-
     margin: 0 auto;
     max-width: 1110px;
+    gap: 2em;
   }
 
   .img_top {
@@ -235,6 +241,10 @@ article span {
     overflow: hidden;
   }
 
+  article.hero {
+    padding: 0 0 0 1em;
+  }
+
   button {
     border: none;
     width: 175px;
@@ -243,6 +253,30 @@ article span {
     font-size: 1rem;
     font-weight: var(--fw-extra-bold);
     border-radius: 8px;
+  }
+}
+
+@media (min-width: 1110px) {
+  .img_top {
+    border-radius: 20px;
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .img_top-keyboard {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  article.hero {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1142px) {
+  header {
+    padding: 0;
   }
 }
 
@@ -289,9 +323,46 @@ article.product {
   margin-top: 4em;
 }
 
+article.product p {
+  text-align: center;
+  margin: 0 auto;
+}
+
 .product {
   padding: 0 1em 0 1em;
   margin-bottom: 3em;
+}
+
+@media (min-width: 48rem) {
+  .product_grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4em;
+    align-items: center;
+  }
+
+  .product_column-1-2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .product_column-2-3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  article.product p {
+    text-align: left;
+  }
+
+  article.product h2 {
+    text-align: left;
+    margin: 0;
+  }
+
+  .product {
+    margin-bottom: 6em;
+  }
 }
 
 .img-wrapper {
