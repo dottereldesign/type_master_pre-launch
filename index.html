@@ -46,10 +46,19 @@
 
     <div class="img_left-container">
       <div class="img_left-clr"></div>
-      <img class="img_left" src="assets/mobile/image-phone-and-keyboard.jpg" alt="">
+      <picture>
+        <source srcset="assets/desktop/image-phone-and-keyboard.jpg" media="(min-width: 1440px)" />
+        <source srcset="assets/tablet/image-phone-and-keyboard.jpg" media="(min-width: 768px)" />
+        <img class="img_left" src="assets/mobile/image-phone-and-keyboard.jpg" alt="">
+      </picture>
     </div>
 
-    <img class="img_right" src="assets/mobile/image-glass-and-keyboard.jpg" alt="">
+    <picture>
+      <source srcset="assets/desktop/image-glass-and-keyboard.jpg" media="(min-width: 1440px)" />
+      <source srcset="assets/tablet/image-glass-and-keyboard.jpg" media="(min-width: 768px)" />
+      <img class="img_right" src="assets/mobile/image-glass-and-keyboard.jpg" alt="">
+    </picture>
+
   </div>
 
   <article class="product product_grid">

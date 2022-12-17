@@ -216,7 +216,7 @@ article span {
   .grid_column-2 {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    margin: 0 auto;
+    margin: 0 auto 4em auto;
     max-width: 1110px;
     gap: 2em;
   }
@@ -333,7 +333,7 @@ article.product p {
   margin-bottom: 3em;
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 48em) {
   .product_grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -363,6 +363,9 @@ article.product p {
   .product {
     margin-bottom: 6em;
   }
+}
+
+@media (min-width: 1110px) {
 }
 
 .img-wrapper {
