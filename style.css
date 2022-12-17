@@ -209,15 +209,19 @@ article span {
 @media (min-width: 768px) {
   .grid_column-2 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
 
     margin: 0 auto;
     max-width: 1110px;
   }
 
   .img_top {
-    margin-left: 170px;
+    position: relative;
+  }
+
+  .img_top-keyboard {
     width: 478px;
+    overflow: hidden;
   }
 
   .column_1-2 {
@@ -228,6 +232,7 @@ article span {
   .column_2-3 {
     grid-column-start: 2;
     grid-column-end: 3;
+    overflow: hidden;
   }
 
   button {
