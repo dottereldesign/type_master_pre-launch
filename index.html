@@ -42,36 +42,40 @@
 
   </section>
 
-  <div class="img_wrapper">
+  <main class="main_grid">
+    <div class="img_wrapper wrapper_column-1-2">
+      <div class="img_left-container">
 
-    <div class="img_left-container">
-      <div class="img_left-clr"></div>
+        <div class="img_left-clr"></div>
+
+        <picture>
+          <source srcset="assets/desktop/image-phone-and-keyboard.jpg" media="(min-width: 1440px)" />
+          <source srcset="assets/tablet/image-phone-and-keyboard.jpg" media="(min-width: 768px)" />
+          <img class="img_left" src="assets/mobile/image-phone-and-keyboard.jpg" alt="">
+        </picture>
+      </div>
+
       <picture>
-        <source srcset="assets/desktop/image-phone-and-keyboard.jpg" media="(min-width: 1440px)" />
-        <source srcset="assets/tablet/image-phone-and-keyboard.jpg" media="(min-width: 768px)" />
-        <img class="img_left" src="assets/mobile/image-phone-and-keyboard.jpg" alt="">
+        <source srcset="assets/desktop/image-glass-and-keyboard.jpg" media="(min-width: 1440px)" />
+        <source srcset="assets/tablet/image-glass-and-keyboard.jpg" media="(min-width: 768px)" />
+        <img class="img_right" src="assets/mobile/image-glass-and-keyboard.jpg" alt="">
       </picture>
     </div>
 
-    <picture>
-      <source srcset="assets/desktop/image-glass-and-keyboard.jpg" media="(min-width: 1440px)" />
-      <source srcset="assets/tablet/image-glass-and-keyboard.jpg" media="(min-width: 768px)" />
-      <img class="img_right" src="assets/mobile/image-glass-and-keyboard.jpg" alt="">
-    </picture>
+    <article class="product product_grid wrapper_column-2-3">
 
-  </div>
+      <div class="product_column-1-2">
+        <h2>Mechanical wireless keyboard</h2>
+      </div>
 
-  <article class="product product_grid">
-    <div class="product_column-1-2">
-      <h2>Mechanical wireless keyboard</h2>
-    </div>
-    <div class="product_column-2-3">
-      <p>
-        The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety
-        of switches and keycaps, along with reliable wireless connectivity.
-      </p>
-    </div>
-  </article>
+      <div class="product_column-2-3">
+        <p>
+          The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety
+          of switches and keycaps, along with reliable wireless connectivity.
+        </p>
+      </div>
+    </article>
+  </main>
 
   <section class="features features_grid">
     <article class="features_card">
