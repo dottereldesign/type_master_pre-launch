@@ -212,7 +212,7 @@ article span {
   height: auto;
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 48em) {
   .grid_column-2 {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -258,7 +258,7 @@ article span {
   }
 }
 
-@media (min-width: 1110px) {
+@media (min-width: 69.375em) {
   .img_top {
     border-radius: 20px;
     margin-left: 0px;
@@ -276,7 +276,7 @@ article span {
   }
 }
 
-@media (min-width: 1142px) {
+@media (min-width: 71.375em) {
   header {
     padding: 0;
   }
@@ -291,7 +291,9 @@ article span {
   height: auto;
   border-radius: 20px;
   margin-left: -22px;
+  -webkit-filter: contrast(200%);
   filter: contrast(200%);
+  -webkit-filter: saturate(8);
   filter: saturate(8);
 }
 
@@ -302,6 +304,7 @@ article span {
   z-index: 2;
   background-color: var(--clr-primary-100);
   opacity: 50%;
+  -webkit-filter: contrast(200%);
   filter: contrast(200%);
   width: 129px;
   height: 100%;
@@ -365,6 +368,23 @@ article.product p {
   }
 
   /* img grid */
+  .tablet_grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2em;
+    padding: 0 1em 0 1em;
+  }
+
+  .tablet_column-1-2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .tablet_column-2-3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
   .img_wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -385,6 +405,7 @@ article.product p {
     z-index: 2;
     background-color: var(--clr-primary-100);
     opacity: 50%;
+    -webkit-filter: contrast(200%);
     filter: contrast(200%);
     width: 100%;
     height: 100%;
@@ -396,29 +417,12 @@ article.product p {
     border-radius: 20px;
     margin-left: 0em;
   }
-
-  .tablet_grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 2em;
-    padding: 0 1em 0 1em;
-  }
-
-  .tablet_column-1-2 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-
-  .tablet_column-2-3 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
 }
 
-@media (min-width: 1110px) {
+@media (min-width: 69.375em) {
   .main_grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 50% 50%;
     margin: 0 auto;
     width: 1110px;
   }
@@ -436,6 +440,21 @@ article.product p {
   article.product {
     display: flex;
     flex-direction: column;
+  }
+
+  article.product {
+    margin: 0;
+  }
+
+  .tablet_grid {
+    padding: 0;
+  }
+
+  .img_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
