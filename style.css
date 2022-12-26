@@ -294,30 +294,42 @@ article span {
   }
 }
 
+/* display images */
+.displayimages {
+  margin-top: 64px;
+}
+
+.displayimages_left {
+  width: 129px;
+  height: auto;
+}
+
+.displayimages_left img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.displayimages_right {
+  width: 220px;
+  height: auto;
+}
+
+.displayimages_right img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
 /* description */
 section.description {
   margin: 64px 16px 0 16px;
 }
 
 @media (min-width: 48em) {
-  section.description {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+}
 
-  h2 {
-    text-align: start;
-  }
-
-  .description_col-1-2 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-
-  .description_col-2-3 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
+@media (min-width: 69.375em) ) {
 }
 
 /* featuers */
