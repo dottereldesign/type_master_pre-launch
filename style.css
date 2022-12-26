@@ -205,7 +205,7 @@ article span {
   width: 100%;
   height: auto;
   border-radius: 20px 0 0 20px;
-  margin-left: 16px;
+  padding-left: 16px;
 }
 
 .img_top-keyboard {
@@ -226,6 +226,7 @@ article span {
 
   .img_top {
     position: relative;
+    padding-left: 0;
   }
 
   .img_top-keyboard {
@@ -261,6 +262,16 @@ article span {
 }
 
 @media (min-width: 69.375em) {
+
+    .grid_column-2 {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      margin: 0 auto 98px auto;
+      max-width: 1110px;
+      gap: 2em;
+      align-items: center;
+
+
   .img_top {
     border-radius: 20px;
     margin-left: 0px;
@@ -400,7 +411,7 @@ article.features_card {
     gap: 2em;
     justify-content: center;
     max-width: 1110px;
-    margin: 0 auto;
+    margin: 98px auto 0 auto;
   }
 
   article.features_card {
